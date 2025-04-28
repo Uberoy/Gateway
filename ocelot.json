@@ -27,6 +27,28 @@
       "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "cards",
+      "Config": [
+        {
+          "Name": "Cards Service",
+          "Version": "v1",
+          "Url": "http://cards-repository:5005/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "users",
+      "Config": [
+        {
+          "Name": "Users Service",
+          "Version": "v1",
+          "Url": "http://users-repository:5006/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:5000"
   }

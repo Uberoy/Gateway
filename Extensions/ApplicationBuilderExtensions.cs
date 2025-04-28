@@ -4,22 +4,18 @@ namespace Gateway.Extensions;
 
 public static class ApplicationBuilderExtensions
 {
-    public static async Task<IApplicationBuilder> UseCustomMiddleware(this WebApplication app)
+    public static IApplicationBuilder UseCustomMiddleware(this WebApplication app)
     {
         app.UseSwagger();
-        app.UseSwaggerUI();
+        app.UseSwaggerForOcelotUI(opt =>
+        {
+            opt.PathToSwaggerGenerator = "/swagger/docs"; // important!
+        });
 
         app.UseHttpsRedirection();
         app.UseCors("Default");
-
-        app.UseSwaggerForOcelotUI(opt =>
-        {
-            opt.PathToSwaggerGenerator = "/swagger/docs";
-        });
-
-        await app.UseOcelot();
+        app.UseOcelot().Wait();
 
         return app;
     }
 }
-
