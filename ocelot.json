@@ -5,8 +5,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "{CardsServiceHost}",
-          "Port": "{CardsServicePort}"
+          "Host": "cards-repo",
+          "Port": 5005
         }
       ],
       "UpstreamPathTemplate": "/cards/",
@@ -18,8 +18,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "{UsersServiceHost}",
-          "Port": "{UsersServicePort}"
+          "Host": "users-repo",
+          "Port": 5006
         }
       ],
       "UpstreamPathTemplate": "/users/",
