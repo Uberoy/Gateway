@@ -1,0 +1,24 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "CardsService",
+      "Config": [
+        {
+          "Name": "Cards API",
+          "Version": "v1",
+          "Url": "http://cards-repository:5005/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "UsersService",
+      "Config": [
+        {
+          "Name": "Users API",
+          "Version": "v1",
+          "Url": "http://users-repository:5006/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

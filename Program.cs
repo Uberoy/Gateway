@@ -12,6 +12,7 @@ builder.WebHost.ConfigureKestrel(serverOptions =>
 builder.Services.AddCustomServices(builder.Configuration);
 builder.Configuration
     .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
+    .AddJsonFile("ocelot.SwaggerEndPoints.json", optional: false, reloadOnChange: true)
     .AddEnvironmentVariables();
 
 

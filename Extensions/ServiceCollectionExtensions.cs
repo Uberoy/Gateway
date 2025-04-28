@@ -1,4 +1,5 @@
 ﻿using Ocelot.DependencyInjection;
+using Ocelot.Values;
 
 namespace Gateway.Extensions;
 
@@ -11,6 +12,7 @@ public static class ServiceCollectionExtensions
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddOcelot();
+        services.AddSwaggerForOcelot(configuration);
 
         services.AddCors(options =>
         {

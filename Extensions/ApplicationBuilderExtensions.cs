@@ -12,6 +12,11 @@ public static class ApplicationBuilderExtensions
         app.UseHttpsRedirection();
         app.UseCors("Default");
 
+        app.UseSwaggerForOcelotUI(opt =>
+        {
+            opt.PathToSwaggerGenerator = "/swagger/docs";
+        });
+
         await app.UseOcelot();
 
         return app;
