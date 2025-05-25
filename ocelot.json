@@ -10,7 +10,46 @@
         }
       ],
       "UpstreamPathTemplate": "/cards/",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE", "OPTIONS" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/cards/follower",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cards-repo",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/cards/follower",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/cards/spell",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cards-repo",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/cards/spell",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/cards/amulet",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cards-repo",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/cards/amulet",
+      "UpstreamHttpMethod": [ "POST" ],
       "DangerousAcceptAnyServerCertificateValidator": true
     },
     {

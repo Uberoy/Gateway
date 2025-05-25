@@ -6,7 +6,7 @@
         {
           "Name": "Cards API",
           "Version": "v1",
-          "Url": "http://cards-repository:5005/swagger/v1/swagger.json"
+          "Url": "http://cards-repo:5005/swagger/v1/swagger.json"
         }
       ]
     },
@@ -16,7 +16,7 @@
         {
           "Name": "Users API",
           "Version": "v1",
-          "Url": "http://users-repository:5006/swagger/v1/swagger.json"
+          "Url": "http://users-repo:5006/swagger/v1/swagger.json"
         }
       ]
     }
